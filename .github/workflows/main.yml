@@ -1,0 +1,15 @@
+name: DevOps Task 4
+
+on:
+  push:
+
+jobs:
+  hello-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Display Success Message
+        run: echo "Workflow executed successfully!"
